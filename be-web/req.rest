@@ -1,0 +1,46 @@
+GET http://localhost:5656/me
+
+###
+POST http://localhost:5656/login
+Content-Type: application/json
+
+{
+    "email":"chandra@gmail.com",
+    "password":"20maret2007"
+}
+
+###
+DELETE http://localhost:5656/logout
+
+###
+POST http://localhost:5656/login
+Content-Type: application/json
+
+{
+    "email":"KingVazz@gmail.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:5656/products
+###
+GET http://localhost:5656/products/57548431-d05a-493d-9efb-884e3bea8f63
+###
+POST http://localhost:5656/products
+Content-Type: application/json
+
+{
+    "name":"Nasi timbel",
+    "price": 20000
+}
+
+###
+PUT http://localhost:5656/products/caa5c662-3a58-46e6-bc5d-5a275ce72b1f
+Content-Type: application/json
+
+{
+    "name":"Nasi buruk",
+    "price": 20000
+}
+###
+DELETE http://localhost:5656/products/caa5c662-3a58-46e6-bc5d-5a275ce72b1f
